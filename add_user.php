@@ -4,7 +4,7 @@ mysql_select_db("twitter");
 $username = $_POST["username"];
 $name = $_POST["name"];
 $password = $_POST["password"];
-$sql = "select id from users where username = '$username'";
+$sql = "select iduser from users where username = '$username'";
 $res = mysql_query($sql);
 if (mysql_num_rows($res) == 0) {
   $sql = "insert into users (username, name, password) values ('$username', '$name', '$password')";
