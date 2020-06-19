@@ -1,0 +1,9 @@
+users  iduser
+       username
+       password
+       name
+
+tweets idtweet
+       iduser
+       content
+       datet
